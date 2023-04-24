@@ -161,7 +161,7 @@
   display: none;
 }
 
-.list__item.list__item_editMode .todo__input_editMode {
+.list__item.list__item_editMode .todo__input {
   display: inline-block;
   width: 224px;
 }
