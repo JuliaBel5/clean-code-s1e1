@@ -6,7 +6,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="intro">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix" class="intro__image">
       <a class="intro__link" 
@@ -16,9 +16,9 @@
     </div>
     <section class="todo">
       <div class="add-item" id="add-item">
-        <label for="new-task">Add Item</label>
+        <label for="new-task" class="add-item__new-task">Add Item</label>
         <div class="add-item__wrapper">
-          <input id="new-task" class="todo__input" type="text">
+          <input id="new-task" class="todo__input add-item__input todo__task" type="text">
           <button class="todo__btn_add">Add</button>
         </div>
       </div>
@@ -26,17 +26,17 @@
       <ul class="todo__list" id="uncompleted-tasks">
         <li class="list__item">
           <input type="checkbox" class="todo__checkbox">
-          <label class="todo__label todo__input">Pay Bills</label>
-          <input type="text" class="todo__input">
+          <label class="todo__label todo__task">Pay Bills</label>
+          <input type="text" class="todo__input todo__task">
           <button class="todo__btn_edit">Edit</button>
           <button class="todo__btn_delete">
             <img src="./remove.svg" class="todo__btn-icon" alt="Remove">
           </button>
         </li>
-        <li class="list__item_editMode">
+        <li class="list__item list__item_editMode">
           <input type="checkbox" class="todo__checkbox">
-          <label class="todo__label todo__input">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="todo__input">
+          <label class="todo__label todo__label_editMode todo__task>">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="todo__input todo__task todo__input_editMode">
           <button class="todo__btn_edit">Save</button>
           <button class="todo__btn_delete">
             <img src="./remove.svg" class="todo__btn-icon" alt="Remove">
@@ -47,8 +47,8 @@
       <ul class="todo__list" id="completed-tasks">
         <li class="list__item">
           <input type="checkbox" checked class="todo__checkbox">
-          <label class="todo__label todo__input">See the Doctor</label>
-          <input type="text" class="todo__input">
+          <label class="todo__label todo__task">See the Doctor</label>
+          <input type="text" class="todo__input todo__task">
           <button class="todo__btn_edit">Edit</button>
           <button class="todo__btn_delete">
             <img src="./remove.svg" class="todo__btn-icon" alt="Remove">
