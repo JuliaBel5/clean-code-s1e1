@@ -22,7 +22,7 @@
   .intro { 
     text-align: center;
   }
-  
+
 }
 
 .add-item {
@@ -120,7 +120,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.list__item > * {
+.list__item .todo__checkbox,
+.list__item .todo__input,
+.list__item .todo__label,
+.list__item .todo__btn_delete,
+.list__item .todo__btn_edit {
   vertical-align: middle;
 }
 
