@@ -46,8 +46,8 @@
   margin: 0;
   padding: 0px;
 }
-.list__item_editMode, 
-.list__item,
+.todo__item_editMode, 
+.todo__item,
 .todo__heading {
   list-style: none;
 }
@@ -105,7 +105,7 @@
 }
 
 /* Task list */
-.list__item {
+.todo__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -114,15 +114,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.list__item .todo__checkbox,
-.list__item .todo__input,
-.list__item .todo__label,
-.list__item .todo__btn_delete,
-.list__item .todo__btn_edit {
+.todo__item .todo__checkbox,
+.todo__item .todo__input,
+.todo__item .todo__label,
+.todo__item .todo__btn_delete,
+.todo__item .todo__btn_edit {
   vertical-align: middle;
 }
 
-.list__item > .todo__checkbox {
+.todo__item > .todo__checkbox {
   margin: 0 10px;
 }
 .todo__label {
@@ -132,7 +132,7 @@
   width: 226px;
   list-style:none;
 }
-.list__item > .todo__input {
+.todo__item > .todo__input {
   width: 226px;
 }
 .todo__btn_delete img {
@@ -151,15 +151,15 @@
 }
 
 /* Edit Task */
-.list__item .todo__input{
+.todo__item .todo__input{
   display: none;
 }
 
-.list__item.list__item_editMode .todo__input {
+.todo__item.todo__item_editMode .todo__input {
   display: inline-block;
   width: 224px;
 }
 
-.list__item.list__item_editMode > .todo__label {
+.todo__item.todo__item_editMode > .todo__label {
   display: none;
 }
