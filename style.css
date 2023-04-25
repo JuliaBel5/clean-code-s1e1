@@ -53,14 +53,10 @@
 }
 .todo__input,
 .todo__checkbox,
-.todo__btn_edit,
-.todo__btn_delete,
-.todo__btn_add {
+.todo__btn {
   outline: none;
 }
-.todo__btn_edit,
-.todo__btn_delete,
-.todo__btn_add {
+.todo__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -69,9 +65,7 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.todo__btn_edit:hover,
-.todo__btn_delete:hover,
-.todo__btn_add:hover {
+.todo__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
