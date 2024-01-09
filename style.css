@@ -4,22 +4,25 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .intro {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .intro img {
   width: 100%;
 }
+
 .intro .intro__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .intro { 
+  .intro {
     text-align: center;
   }
 
@@ -28,34 +31,41 @@
 .add-item {
   margin: 16px 0;
 }
+
 .todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .todo__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .add-item__wrapper {
   display: flex;
   width: 100%;
 }
+
 .todo__list {
   margin: 0;
   padding: 0px;
 }
-.todo__item_editMode, 
+
+.todo__item_editMode,
 .todo__item,
 .todo__heading {
   list-style: none;
 }
+
 .todo__input,
 .todo__checkbox,
 .todo__btn {
   outline: none;
 }
+
 .todo__btn {
   background: none;
   border: 0px;
@@ -65,9 +75,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .todo__btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .todo__heading,
 .add-item__new-task {
@@ -79,6 +91,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .todo__input {
   margin: 0;
   font-size: 18px;
@@ -91,6 +104,7 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .todo__input:focus {
   color: #333;
 }
@@ -100,6 +114,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .add-item__input {
   width: 318px;
 }
@@ -114,6 +129,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .todo__item .todo__checkbox,
 .todo__item .todo__input,
 .todo__item .todo__label,
@@ -122,24 +138,28 @@
   vertical-align: middle;
 }
 
-.todo__item > .todo__checkbox {
+.todo__item>.todo__checkbox {
   margin: 0 10px;
 }
+
 .todo__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-  list-style:none;
+  list-style: none;
 }
-.todo__item > .todo__input {
+
+.todo__item>.todo__input {
   width: 226px;
 }
+
 .todo__btn_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .todo__btn_delete img:hover {
   transform: rotateZ(0);
 }
@@ -151,7 +171,7 @@
 }
 
 /* Edit Task */
-.todo__item .todo__input{
+.todo__item .todo__input {
   display: none;
 }
 
@@ -160,6 +180,6 @@
   width: 224px;
 }
 
-.todo__item.todo__item_editMode > .todo__label {
+.todo__item.todo__item_editMode>.todo__label {
   display: none;
 }
