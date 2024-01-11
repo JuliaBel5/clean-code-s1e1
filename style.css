@@ -54,7 +54,7 @@
   padding: 0px;
 }
 
-.todo__item_editMode,
+.todo__item_edit-mode,
 .todo__item,
 .todo__heading {
   list-style: none;
@@ -175,11 +175,11 @@
   display: none;
 }
 
-.todo__item.todo__item_editMode .todo__input {
+.todo__item.todo__item_edit-mode .todo__input {
   display: inline-block;
   width: 224px;
 }
 
-.todo__item.todo__item_editMode>.todo__label {
+.todo__item.todo__item_edit-mode>.todo__label {
   display: none;
 }
